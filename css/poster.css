@@ -126,6 +126,30 @@ html  {
     }
 }
 
+footer {
+    margin-top: 30rem;
+    text-align: center;
+    color: #777;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #777;
+}
+
 
 .modal {
     display: none;
@@ -190,6 +214,12 @@ html  {
 
 .carousel .carousel__item--visible {
     display: block;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .carousel .carousel__actions {
@@ -200,6 +230,7 @@ html  {
     top: 50%;
     transform: translateY(-50%);
 }
+
 .carousel .carousel__actions button {
     border-radius: 50px;
     cursor: pointer;
@@ -207,32 +238,8 @@ html  {
     height: 50px;
     width: 50px;
     border: 0;
-    background-color: rgba(154, 152, 150, 0.603);
+    background-color: rgba(62, 38, 6, 0.5);
     font-size: 2rem;
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
     margin: 0.5rem;
-}
-
-footer {
-    margin-top: 30rem;
-    text-align: center;
-    color: #777;
-}
-
-footer ul {
-    list-style: none;
-}
-
-footer ul li {
-    display: inline-block;
-    margin-top: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-}
-
-footer ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1rem;
-    color: #777;
 }
