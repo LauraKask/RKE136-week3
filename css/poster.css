@@ -6,12 +6,9 @@
     box-sizing: border-box;
 }
 
-html, body {
+html  {
     font-family: 'Roboto', sans-serif;
     color: #151515;
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
 }
 
 .movie-card {
@@ -41,13 +38,6 @@ html, body {
     cursor: pointer;
     border-radius:15px;
     position: relative;
-    left: -50rem;
-    animation: slide-from-left 3.5s ease-in-out forwards;
-}
-
-@keyframes slide-from-left {
-    80% {left: 1rem;}
-    100% {left: 0;}
 }
 
 .movie-poster-container img:hover {
@@ -158,4 +148,44 @@ footer ul li a {
     text-transform: uppercase;
     font-size: 1rem;
     color: #777;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(238, 237, 231, 0.726);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.modal-content {
+    background-color: antiquewhite; 
+    margin: 5% auto;
+    padding: 5rem;
+    width: 600px;
+    height: 600px;
+    animation: zoom-in 1s;
+}
+
+@keyframes zoom-in {
+    0% {transform: scale(0); }
+    100% {transform: scale(1); }
+}
+
+.closeBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.movie-poster-modal {
+    width: 300px;
+}
+
+.movie-poster {
+    cursor: pointer;
 }
